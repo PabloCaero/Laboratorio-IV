@@ -2,16 +2,33 @@ package dominio;
 
 public class Principal {
 	public static void main(String[] args) {
-		Articulo art = new Articulo(); //Instancia del objeto por el constructor vacío
+
+		/*Articulo art1 = new Articulo();*/
+
+		/*art1.setNombre("Articulo 1");
+		System.out.println(art1.toString());
 		
-		art.setId(2);
-		art.setNombre("Articulo 2");
+		Articulo art2 = new Articulo();
+		art2.setNombre("Articulo 2");
+		System.out.println(art2.toString());
 		
-		//Para mostrar lo que tiene el objeto
-		//System.out.println("ID: " + art.getId()+" - NOMBRE: " + art.getNombre());
+		Articulo art3 = new Articulo();
+		art3.setNombre("Articulo 3");
+		System.out.println(art3.toString());*/
 		
-		//Para mostrar con el método ToString()
+		//GENERO UN ARRAY
+		Articulo[] vArt = new Articulo[3];
+		vArt[0] = new Articulo("Articulo 1");
+		vArt[1] = new Articulo("Articulo 2");
+		vArt[2] = new Articulo("Articulo 3");
 		
-		System.out.println(art.toString());
+		for (Articulo articulo : vArt) {
+			System.out.println(articulo.toString());
+		}
+		
+		//MUESTRO METODO
+		
+		System.out.println(Articulo.devuelveProximoID()); //METODO ESTATICO
+		
 	}
 }
