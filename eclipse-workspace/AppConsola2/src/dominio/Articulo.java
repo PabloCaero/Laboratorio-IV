@@ -1,6 +1,6 @@
 package dominio;
 
-public class Articulo {
+public class Articulo {//public final class = SIGNIFICA QUE SE CORTA CON LA HERENCIA
 	//Atributos - Concepto de Encapsulamiento
 	private int id;
 	private String nombre;
